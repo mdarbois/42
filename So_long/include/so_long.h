@@ -3,19 +3,29 @@
 
 # include <unistd.h>
 # include <stdio.h>
-#include <stdlib.h>
+# include <stdlib.h>
 # include <fcntl.h>
 # include <errno.h>
 # include <string.h>
-#include "../libft/include/libft.h"
+# include "../libft/include/libft.h"
 # include "../minilibx-linux/mlx.h"
+
+typedef struct s_coord
+{
+	int		x;
+	int		y;
+}	t_coord;
 
 typedef struct s_player
 {
+	int				player_move;
+	int				player_coll;
 	int				player_up;
 	int				player_down;
 	int				player_left;
 	int				player_right;
+	t_coord				player;
+	
 }	t_player;
 
 typedef struct s_game
@@ -44,7 +54,7 @@ typedef struct s_game
 	int		x;
 	int		y;
 	t_player	*moves;
-
+	t_coord		*coll;
 }	t_game;
 
 void	character_valid(t_game *game);
