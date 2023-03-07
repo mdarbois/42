@@ -55,6 +55,7 @@ typedef struct s_game
 	int		y;
 	t_player	*moves;
 	t_coord		*coll;
+	t_coord		exit;
 }	t_game;
 
 void	character_valid(t_game *game);
