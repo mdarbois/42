@@ -33,11 +33,17 @@ int	key_release(int keycode, t_game *game)
 
 static void	had_move(t_game *game, int x, int y)
 {
+	char	*nb;
 	if (game->moves->player.x != x || game->moves->player.y != y)
 	{
 		game->moves->player_move++;
-		ft_putnbr_fd(game->moves->player_move, 1);
-		ft_putendl_fd("", 1);
+		//ft_putnbr_fd(game->moves->player_move, 1);
+		//ft_putendl_fd("", 1);
+		mlx_string_put(mlx->mlx, mlx->win, 10, 5, 0xFFFF00, "Movements: ");
+		nb = ft_itoa(mlx->moves);
+		mlx_string_put(mlx->mlx, mlx->win, 140, 5, 0xFFFF00, nb);
+		free(nb);
+		nb = NULL;
 	}
 }
 
