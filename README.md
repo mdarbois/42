@@ -6,3 +6,4 @@
 - Get Next Line
 - Push Swap
 - Pipex
+- So Long
