@@ -5,15 +5,15 @@ FLAGS = -Wall -Wextra -Werror
 
 INCS = include/so_long.h 
 
-SRCS = end.c errors.c event.c graphics.c init.c map_parsing.c map.c mlx_utils.c moves.c main.c update.c
+SRCS = errors.c event.c graphics.c main.c map.c move.c
 
 OBJS = $(SRCS:.c=.o)
 
 MLX_FLAGS = -lXext -lX11
+#MLX_FLAGS = -Lminilibx-mac -lmlx -framework OpenGL -framework AppKit
 
 MINILIBX_PATH = minilibx-linux/
-
-FT_PRINTF_PATH = ft_printf/
+#MINILIBX_PATH = minilibx-mac/
 
 LIBFT_PATH = libft/
 
