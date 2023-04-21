@@ -7,3 +7,4 @@
 - Push Swap
 - Pipex
 - So Long
+- Philosophers
