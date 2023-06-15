@@ -1,0 +1,70 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: msiffert <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/05/22 10:31:39 by msiffert          #+#    #+#              #
+#    Updated: 2023/05/22 10:31:43 by msiffert         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Define the names of the programs
+NAME = minishell
+
+# Define the names of the source files
+SRC_FILES = lexer/lexer.c lexer/lexer_lst.c lexer/tokenization.c \
+			lexer/token_utils.c
+
+# Define the name of the library file
+LIBFT = libft.a
+
+SRC_DIR = src/
+
+INC_DIR = include/
+
+SRCD = $(addprefix $(SRC_DIR), $(SRC_FILES))
+
+# Define the object files that will be generated
+OBJ = ${SRCD:.c=.o}
+
+# Define the compiler and compiler flags
+CC = cc
+CFLAGS = -Wall -Wextra -Werror
+
+# Define the include directories
+INCLUDE = -I include
+
+# Define the command to remove files
+RM = rm -rf
+
+# The default target
+all: $(NAME)
+
+# Target to build the client program
+$(NAME): $(OBJ)
+# Build the libft library
+			@make -sC libft
+
+# Link the object files and the library to create the main program
+			$(CC) $(CFLAGS) $(OBJ) $(INCLUDE) libft/$(LIBFT) -o $(NAME)
+
+# Target to remove object files
+clean:
+# Remove object files from the libft library
+	@make clean -C libft
+
+# Remove the main object files
+	@$(RM) $(OBJ)
+
+# Target to remove generated files
+fclean: clean
+	$(RM) $(NAME)
+	$(RM) libft/$(LIBFT)
+
+# Target to rebuild everything from scratch
+re: fclean all
+
+# Declare the phony targets
+.PHONY: all clean fclean re
