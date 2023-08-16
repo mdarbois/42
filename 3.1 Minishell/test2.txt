@@ -1,6 +1,0 @@
-	ret = true;
-	ret = true;
-		return (true);
-	return (true);
-	if (infile == true && io->infile)
-	return (true);
