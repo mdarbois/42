@@ -1,6 +1,7 @@
 # 42 School Projects
 
-# included:
+This repository lists all the passed projects of the 42 Core Curriculum.
+
 - Libft
 - Ft Printf
 - Get Next Line
