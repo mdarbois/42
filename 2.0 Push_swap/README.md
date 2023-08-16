@@ -1,9 +1,15 @@
-The purpose of this project is sort data on a stack, with specific rules, using the lowest possible number of actions.
+# Push Swap 
+
+The purpose of this project is to sort data on a stack, with specific rules, using the lowest possible number of actions.
+
+Notion:
+- algorithmy
+
+-----
+
+## Rules
 
 The push_swap program takes a set of int values, sorts the values using rules and writes commands that make the set sorted. 
-To do this, you need think the algorithm and implement it.
-
-Rules
 
 We have 2 stacks named a and b. To start with:
 
@@ -23,16 +29,3 @@ rra - reverse rotate a - shift down all elements of stack a by 1. The last eleme
 rrb - reverse rotate b - shift down all elements of stack b by 1. The last element becomes the first one
 rrr - reverse rotate a and reverse rotate b at the same time
 
-Example of working push_swap:
-
-Input parameters and output of the implemented programme:
-
-$> ./push_swap 2 1 3 6 5 8
-sa
-pb
-pb
-pb
-sa
-pa
-pa
-pa
