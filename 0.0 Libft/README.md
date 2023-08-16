@@ -1,9 +1,9 @@
-#Libft: Create a library of basic C functions
+# Libft: Create a library of basic C functions
  
  This project aims to redo in C a library of usual functions that can be used in the next projects of 42.
  ## List of functions:
 
- ### Functions from '<ctype.h>'
+ ### Functions from `<ctype.h>`
 - isalnum: checking for an alphanumeric character
 - isalpha: checking for an alphabetic character
 - isascii: checking for an ASCII character
@@ -12,7 +12,7 @@
 - tolower: converting char to lowercase
 - toupper: converting char to uppercase
 
- ### Functions from '<string.h>'
+ ### Functions from `<string.h>`
 - bzero: writing zeroes to a byte string
 - memchr: locating byte in byte string
 - memcmp: comparing byte string
@@ -28,7 +28,7 @@
 - strnstr: locating a substring in a string
 - strrchr: locating the last occurance of a character in a string
 
- ### Functions from '<stdlib.h>'
+ ### Functions from `<stdlib.h>`
 - atoi: turning a string into an integer
 - calloc: allocating contiguous memory and sets its bytes' values to 0
 
