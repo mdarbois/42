@@ -1,7 +1,10 @@
+# Pipex
 
-The purpose of this project is the discovery in detail UNIX mechanism - pipe.
+Pipex is a project that re-creates in C the way two commands are piped together via `|` in the shell
 
-Description of mandatory part
+----
+
+Description:
 
 The program pipex should repeat the behaviour of the  shell command
 
