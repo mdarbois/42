@@ -95,6 +95,8 @@ int	check_empty_lines(t_board *board)
 	i = 0;
 	start = 0;
 	end = 0;
+	if (board->flag != 6)
+		ft_error(board, "Empty file\n", 1);
 	while (board->map[i] && ft_strncmp(board->map[i],
 			"\n", ft_strlen(board->map[i])) == 0)
 		i++;
