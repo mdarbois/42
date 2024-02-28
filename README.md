@@ -13,3 +13,4 @@ This repository contains all the passed projects of the 42 Core Curriculum.
 - Create a minitature shell program: [Minishell](https://github.com/mdarbois/42/tree/main/3.1%20Minishell)
 - Create a Wolfenstein3D-like maze program. Team project: [Cub3D](https://github.com/mdarbois/42/tree/main/4.1%20Cub3D)
 - Introduction to Object-Oriented Programing in C++: [CPP Modules](https://github.com/mdarbois/42/tree/main/4.0%20CPP%20Modules)
+- HTTP web server in C++: [Webserv](https://github.com/mdarbois/42_webserv)
