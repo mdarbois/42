@@ -1,0 +1,3 @@
+[submodule "Webserv"]
+	path = Webserv
+	url = https://github.com/mdarbois/42_webserv
