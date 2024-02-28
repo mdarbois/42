@@ -1,3 +1,6 @@
 [submodule "Webserv"]
 	path = Webserv
 	url = https://github.com/mdarbois/42_webserv
+[submodule "Inception"]
+	path = Inception
+	url = https://github.com/mdarbois/42_inception
