@@ -4,9 +4,6 @@
 [submodule "Inception"]
 	path = Inception
 	url = https://github.com/mdarbois/42_inception
-[submodule "42_transcendence"]
-	path = 42_transcendence
-	url = https://github.com/Linuswidmer/42_transcendence.git
 [submodule "Transcendence"]
 	path = Transcendence
 	url = https://github.com/Linuswidmer/42_transcendence
